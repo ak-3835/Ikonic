@@ -1,0 +1,194 @@
+/*
+Theme Name: Ikonic
+Text Domain: ikonic
+Version: 1.0
+Tested up to: 6.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Custom Ikonic Theme
+Author: Ahsan kamal
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/gs/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+tags: one-column, custom-column, custom-logo
+*/
+
+.mar-top {
+    margin-top: 80px;
+}
+.mar-bot {
+    margin-bottom: 80px;
+}
+.txt-color {
+    color:#54585a;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-white {
+    padding: 20px;
+}
+a.nav-item.px-3 {
+    color: grey;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+}
+/* Custom styles for the background image */
+.background-image {
+    background-image: url('specialtyFirstBlock.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Text color on the background image */
+    /* text-align: center; */
+    height: 70vh; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    padding: 0px 91px !important;
+}
+.hero-text {
+    font-size:3.2em;
+}
+.hero-para {
+    font-size: 2em;
+}
+.custom-column {
+    margin: 0px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.custom-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color:#326295;
+}
+.icon-text {
+    font-weight: 500;
+}
+.spec-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.items-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.center-text {
+    text-align: center;
+}
+.bg-color {
+    background-color: #f2f2f2;
+}
+/* video section */
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* White overlay with 80% opacity */
+    transition: opacity 0.5s ease; /* Add transition for smooth fade */
+    pointer-events: none; /* Allow clicks to pass through to the video */
+}
+.hidden {
+    opacity: 0;
+}
+.center-content {
+    text-align: center;
+}
+.vid-bg {
+    background-color: #35679c;
+}
+ .spec-bg {
+    background-color: #f2f2f2;
+ }
+
+.pad {
+    padding:0px 150px;
+}
+.inn-pad {
+    padding: 40px;
+    margin: 5px;
+}
+.custom-column.bg-white.inn-pad:hover {
+    background: #345884 !important;
+}
+.custom-column.bg-white.inn-pad:hover .custom-icon,  .custom-column.bg-white.inn-pad:hover .txt-color{
+    color:#fff;
+}
+/* Accordion */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Custom styles for title on click */
+.accordion .card-header.active {
+    background-color: #345884;
+    color: #fff;
+}
+.accordion .card-header::after {
+    content: '\002B'; /* Unicode character for plus sign */
+    color: #345884;
+    float: right;
+    font-size: 40px;
+}
+
+.accordion .card-header.active::after {
+    content: '\2212'; /* Unicode character for minus sign */
+    color: #fff;
+    font-size: 40px;
+}
+.collapse.show {
+    border: none;
+    background-color: whitesmoke;
+}
+.card {
+    border:none;
+}
+.card-body {
+    padding: 40px 30px;
+}
+/* btn */
+.cus-btn {
+    padding: 8px 50px 8px 50px;
+    border: none;
+    background-color: #326295;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+/* footer */
+.footer-bg {
+    background-color:#ededed;
+}
+.txt-color p {
+    font-size: 0.8em;
+}
+@media screen and (max-width: 680px) {
+    .hero-text {
+        font-size: 2.2em;
+    }
+    .background-image {
+        height: 25vh; /* Adjust the height as needed */
+    }
+    .container {
+        padding: 0px 40px;
+    }
+    .pad {
+        padding: 0px;
+    }
+  }
